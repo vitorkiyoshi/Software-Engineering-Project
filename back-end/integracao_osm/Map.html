@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bdf12fb12a844aceafc8156f171e9b0c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bdf12fb12a844aceafc8156f171e9b0c" ></div>
+        
+</body>
+<script>    
+    
+            var map_bdf12fb12a844aceafc8156f171e9b0c = L.map(
+                "map_bdf12fb12a844aceafc8156f171e9b0c",
+                {
+                    center: [-22.8919828, -47.0602289],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dbe1db9d7a7a48dba056e8e5a8baf651 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var marker_47049938aab84450a54231e0cc7ac1a7 = L.marker(
+                [-22.828687665651053, -47.0623763852583],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_f17af00368e047eba6dee1bbc59eb05a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_47049938aab84450a54231e0cc7ac1a7.setIcon(icon_f17af00368e047eba6dee1bbc59eb05a);
+        
+    
+        var popup_03f2012dbf8a416aa9f905a9702b2566 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69dc9be3edf5477883fa09f86a31fc86 = $(`<div id="html_69dc9be3edf5477883fa09f86a31fc86" style="width: 100.0%; height: 100.0%;"><i> Hemocentro Unicamp</i></div>`)[0];
+            popup_03f2012dbf8a416aa9f905a9702b2566.setContent(html_69dc9be3edf5477883fa09f86a31fc86);
+        
+
+        marker_47049938aab84450a54231e0cc7ac1a7.bindPopup(popup_03f2012dbf8a416aa9f905a9702b2566)
+        ;
+
+        
+    
+    
+            var marker_eed7d175f3b446eb846c160b038d73c3 = L.marker(
+                [-22.91703757963043, -47.0692536814076],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_1aab58df2b654e63aab36893edd65846 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_eed7d175f3b446eb846c160b038d73c3.setIcon(icon_1aab58df2b654e63aab36893edd65846);
+        
+    
+        var popup_d91747f81870467fbc8a343ee1227301 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e02a2dcfb098480eb158934ddc280163 = $(`<div id="html_e02a2dcfb098480eb158934ddc280163" style="width: 100.0%; height: 100.0%;"><i> Hemocentro Mario Gatti</i></div>`)[0];
+            popup_d91747f81870467fbc8a343ee1227301.setContent(html_e02a2dcfb098480eb158934ddc280163);
+        
+
+        marker_eed7d175f3b446eb846c160b038d73c3.bindPopup(popup_d91747f81870467fbc8a343ee1227301)
+        ;
+
+        
+    
+    
+            var marker_4367e8ca1f4a45ca9a1c850c1beff562 = L.marker(
+                [-22.900613929633675, -47.05499357781928],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_d5ef9f89acb14321b43b27e02bd9e394 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_4367e8ca1f4a45ca9a1c850c1beff562.setIcon(icon_d5ef9f89acb14321b43b27e02bd9e394);
+        
+    
+        var popup_9ad09e754fcd4593a11388a677017bdd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_326143f30b8a4536b6534ce85b2f05b6 = $(`<div id="html_326143f30b8a4536b6534ce85b2f05b6" style="width: 100.0%; height: 100.0%;"><i> Centro de Hematologia e Hemoterapia</i></div>`)[0];
+            popup_9ad09e754fcd4593a11388a677017bdd.setContent(html_326143f30b8a4536b6534ce85b2f05b6);
+        
+
+        marker_4367e8ca1f4a45ca9a1c850c1beff562.bindPopup(popup_9ad09e754fcd4593a11388a677017bdd)
+        ;
+
+        
+    
+    
+            var marker_1e0bc75bbd144f1e9f520536c34f46d9 = L.marker(
+                [-22.909057165561126, -47.05402072956243],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_e2a0d3a83db44b28af4c59c88b409b36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_1e0bc75bbd144f1e9f520536c34f46d9.setIcon(icon_e2a0d3a83db44b28af4c59c88b409b36);
+        
+    
+        var popup_5f167866eebc47649ca3c0381b4a6847 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ab759d94e3c47a1a50246a3ed8caabe = $(`<div id="html_3ab759d94e3c47a1a50246a3ed8caabe" style="width: 100.0%; height: 100.0%;"><i> IHC- Instituto Hematológico de Campinas 2</i></div>`)[0];
+            popup_5f167866eebc47649ca3c0381b4a6847.setContent(html_3ab759d94e3c47a1a50246a3ed8caabe);
+        
+
+        marker_1e0bc75bbd144f1e9f520536c34f46d9.bindPopup(popup_5f167866eebc47649ca3c0381b4a6847)
+        ;
+
+        
+    
+    
+            var marker_5c6273d02cd449fe8a5dcd0e961fb81c = L.marker(
+                [-22.903834440832494, -47.06911982147625],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_dc5c3f8ace384af2ad85e45aeb8b0ead = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_5c6273d02cd449fe8a5dcd0e961fb81c.setIcon(icon_dc5c3f8ace384af2ad85e45aeb8b0ead);
+        
+    
+        var popup_40df253cb0704169883dae2e62463476 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac89d67d63db4088be786ba8b4e9abf3 = $(`<div id="html_ac89d67d63db4088be786ba8b4e9abf3" style="width: 100.0%; height: 100.0%;"><i> CHCM Centro de Hemoterapia Celular em Medicina</i></div>`)[0];
+            popup_40df253cb0704169883dae2e62463476.setContent(html_ac89d67d63db4088be786ba8b4e9abf3);
+        
+
+        marker_5c6273d02cd449fe8a5dcd0e961fb81c.bindPopup(popup_40df253cb0704169883dae2e62463476)
+        ;
+
+        
+    
+    
+            var marker_56010b5b4694452392deced0210a690d = L.marker(
+                [-22.746801993769036, -47.32928917415559],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_54df3d1de7234eed87d6c82abbf51fb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_56010b5b4694452392deced0210a690d.setIcon(icon_54df3d1de7234eed87d6c82abbf51fb1);
+        
+    
+        var popup_66232eec70a64854b2ccb1f2c5e49df9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9442af4c98264f5694bf2b9eed7c82e6 = $(`<div id="html_9442af4c98264f5694bf2b9eed7c82e6" style="width: 100.0%; height: 100.0%;"><i> Banco de Sangue Hospital São Francisco</i></div>`)[0];
+            popup_66232eec70a64854b2ccb1f2c5e49df9.setContent(html_9442af4c98264f5694bf2b9eed7c82e6);
+        
+
+        marker_56010b5b4694452392deced0210a690d.bindPopup(popup_66232eec70a64854b2ccb1f2c5e49df9)
+        ;
+
+        
+    
+    
+            var marker_d57b6fe821194236b5b6ff015f5fe387 = L.marker(
+                [-22.92052381636033, -47.11927821789643],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_60d6a1073d8c4a61b6864f79a7c91c7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d57b6fe821194236b5b6ff015f5fe387.setIcon(icon_60d6a1073d8c4a61b6864f79a7c91c7c);
+        
+    
+        var popup_1fdee6e4b15442e3842389ea45fcd985 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_002e36c724be476e95aa436fb0dfa1b2 = $(`<div id="html_002e36c724be476e95aa436fb0dfa1b2" style="width: 100.0%; height: 100.0%;"><i> Hemocentro Hospital Celso Pierro</i></div>`)[0];
+            popup_1fdee6e4b15442e3842389ea45fcd985.setContent(html_002e36c724be476e95aa436fb0dfa1b2);
+        
+
+        marker_d57b6fe821194236b5b6ff015f5fe387.bindPopup(popup_1fdee6e4b15442e3842389ea45fcd985)
+        ;
+
+        
+    
+    
+            var marker_bb8edeeeddc2483188e2b45835d9198e = L.marker(
+                [-23.181649882789152, -46.88410126027672],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_1bd99b7bcb494b04b3b11ee2454f69e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_bb8edeeeddc2483188e2b45835d9198e.setIcon(icon_1bd99b7bcb494b04b3b11ee2454f69e3);
+        
+    
+        var popup_1aff2c78d4274f7ab66a8b8922d46dcc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c39247b0cf544fb1b2eddec93b252d62 = $(`<div id="html_c39247b0cf544fb1b2eddec93b252d62" style="width: 100.0%; height: 100.0%;"><i> Colsan - Hemocentro Regional de Jundiaí</i></div>`)[0];
+            popup_1aff2c78d4274f7ab66a8b8922d46dcc.setContent(html_c39247b0cf544fb1b2eddec93b252d62);
+        
+
+        marker_bb8edeeeddc2483188e2b45835d9198e.bindPopup(popup_1aff2c78d4274f7ab66a8b8922d46dcc)
+        ;
+
+        
+    
+    
+            var marker_ceb1a06dda984c388ff8136ff232d8bd = L.marker(
+                [-22.741325200514375, -47.308753508080024],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_766392b58ef5400680d5218d371f77fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_ceb1a06dda984c388ff8136ff232d8bd.setIcon(icon_766392b58ef5400680d5218d371f77fe);
+        
+    
+        var popup_68edd91b241d4170bf637eb2d21efe3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5732dd9421044ebe90f278ebc11d4a32 = $(`<div id="html_5732dd9421044ebe90f278ebc11d4a32" style="width: 100.0%; height: 100.0%;"><i> Cohe Prest Serv Hemat Clin Hemot Onc Clinic S S</i></div>`)[0];
+            popup_68edd91b241d4170bf637eb2d21efe3e.setContent(html_5732dd9421044ebe90f278ebc11d4a32);
+        
+
+        marker_ceb1a06dda984c388ff8136ff232d8bd.bindPopup(popup_68edd91b241d4170bf637eb2d21efe3e)
+        ;
+
+        
+    
+    
+            var marker_42aa241ee67c418097f10f8f5f4059a7 = L.marker(
+                [-23.177339817234923, -46.9316667420085],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_62fbc641da19449cb4d62bd1ac05c4e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_42aa241ee67c418097f10f8f5f4059a7.setIcon(icon_62fbc641da19449cb4d62bd1ac05c4e1);
+        
+    
+        var popup_ea3d879021094f669a2c163860e2ae48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_911e0d857ead42208743595da42c4d93 = $(`<div id="html_911e0d857ead42208743595da42c4d93" style="width: 100.0%; height: 100.0%;"><i> Instituto Bollhoff</i></div>`)[0];
+            popup_ea3d879021094f669a2c163860e2ae48.setContent(html_911e0d857ead42208743595da42c4d93);
+        
+
+        marker_42aa241ee67c418097f10f8f5f4059a7.bindPopup(popup_ea3d879021094f669a2c163860e2ae48)
+        ;
+
+        
+    
+    
+            var marker_3d6e3fdfd6ad4ac2bfbb003f66185712 = L.marker(
+                [-22.8919828, -47.0602289],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_ec86901c967a462f9a9cb6e133827f78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d6e3fdfd6ad4ac2bfbb003f66185712.setIcon(icon_ec86901c967a462f9a9cb6e133827f78);
+        
+    
+        var popup_6d876fede9564b2bbd61b550a28be033 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73643b08eb114d1e851d05fbcfe56a68 = $(`<div id="html_73643b08eb114d1e851d05fbcfe56a68" style="width: 100.0%; height: 100.0%;"><i> Sua localização </i></div>`)[0];
+            popup_6d876fede9564b2bbd61b550a28be033.setContent(html_73643b08eb114d1e851d05fbcfe56a68);
+        
+
+        marker_3d6e3fdfd6ad4ac2bfbb003f66185712.bindPopup(popup_6d876fede9564b2bbd61b550a28be033)
+        ;
+
+        
+    
+    
+            var marker_c7870de921134f208992bd9276e82798 = L.marker(
+                [-22.900613929633675, -47.05499357781928],
+                {}
+            ).addTo(map_bdf12fb12a844aceafc8156f171e9b0c);
+        
+    
+            var icon_cb0d6848287f4540987e0418ad334c72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "red", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c7870de921134f208992bd9276e82798.setIcon(icon_cb0d6848287f4540987e0418ad334c72);
+        
+    
+        var popup_af983f8d3cfb48c28a3a099b6e25f768 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c0f5bf6ef0e4b058f58a471b18486f2 = $(`<div id="html_2c0f5bf6ef0e4b058f58a471b18486f2" style="width: 100.0%; height: 100.0%;"><i> Centro de Hematologia e Hemoterapia</i></div>`)[0];
+            popup_af983f8d3cfb48c28a3a099b6e25f768.setContent(html_2c0f5bf6ef0e4b058f58a471b18486f2);
+        
+
+        marker_c7870de921134f208992bd9276e82798.bindPopup(popup_af983f8d3cfb48c28a3a099b6e25f768)
+        ;
+
+        
+    
+    
+            marker_c7870de921134f208992bd9276e82798.bindTooltip(
+                `<div>
+                     Hemocentro mais próximo da sua localização
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

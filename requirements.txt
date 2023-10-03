@@ -1,0 +1,6 @@
+pandas
+Flask
+flask-cors
+Flask-JWT-Extended
+folium
+geopy

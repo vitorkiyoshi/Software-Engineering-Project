@@ -1,0 +1,70 @@
+stages:
+  - test_back_login_cadastro
+  - test_back_integracao_osm
+  - build_front
+  - test_front
+
+
+# [ back-end ]
+
+#build_back:
+#  rules:
+#  - when: manual
+
+#  stage: init_back
+#  image: python:3.10.0
+#  script: 
+#    - pip install pandas
+#    - pip install Flask
+#    - pip install Flask-Cors
+#    - pip install flask-jwt-extended
+
+test_back_login_cadastro:
+  rules:
+  - when: manual
+
+  stage: test_back_login_cadastro
+  image: python:3.10.0
+  before_script:
+    - pip install -r requirements.txt
+  script:
+    - cd back-end
+    - cd login_cad
+    - - echo "executando testes de login e cadastro:"
+    - python test_cadlog.py
+
+test_back_integracao_osm:
+  rules:
+    - when: manual
+
+  stage: test_back_integracao_osm
+  image: python:3.10.0
+  before_script:
+    - pip install -r requirements.txt
+  script:
+    - cd back-end
+    - cd integracao-osm
+    - echo "executando testes de integracao osm:"
+    - python test_coord.py
+    - python test_mapa.py
+
+# [ front-end ]
+build_front:
+  rules:
+  - when: manual
+
+  stage: build_front
+  image: node:14.16.1
+  script: 
+    - cd front-end 
+    - npm install
+    - npm build
+
+#test_front:
+#  rules:
+#  - when: manual
+#  stage: test_front
+#  image: node:14.16.1
+#  script:
+#    - CI=true npm test
+#    - echo "Teste executado."
